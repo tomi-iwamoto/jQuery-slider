@@ -107,19 +107,20 @@ textarea {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: 200px;
   }
 
   .slider-inner {
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 70%;
     position:relative;
   }
 
   .slider-inner img {
     display:none; /*we want all images hidden in the beginning*/
-    width:60%;
+    width:80%;
   }
 
   .slider-inner img.active {
@@ -142,6 +143,14 @@ textarea {
     z-index: 100;
   }
 
+  button {
+    border:none;
+    background:black;
+    width:30px;
+    height:30px;
+    border-radius: 50px;
+    color:white;
+  }
  
   
 
