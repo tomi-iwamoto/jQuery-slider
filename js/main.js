@@ -37,10 +37,14 @@ $(document).ready(function(){
 
         let currentImg = $('.active'); //I am defining current image
         let previousImg = currentImg.prev(); // I am defining next image
+        let lastImg = $('.last');
 
         if(previousImg.length > 0){// this means if there is a next image
             currentImg.removeClass('active').css('z-index', -10);
             previousImg.addClass('active').css('z-index', 10);
+        } else { //if there is no more previous images left
+            currentImg.removeClass('active').css('z-index', -10);
+            lastImg.addClass('active').css('z-index', 10);
         }
     });
 
